@@ -238,3 +238,43 @@ section{
     color: #ffeeee;
     transition: 0.4s all ease-in-out;
 }
+.customers-container{
+    border-radius: 6px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,auto));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.customers-container .box{
+    background-color: #605246;
+    padding: 20px;
+    box-shadow: 2px 6px 6px 2px #36322D;
+    border-radius: 0.5rem;
+    text-align: justify;
+}
+.stars .bx{
+    color: #C2B9AF;
+}
+.customers-container .box p{
+    font-size: 0.938rem;
+}
+.customers-container .box h2{
+    font-size: 1.2rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 0.5rem 0 0.5rem;
+}
+.customers-container .box img{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    object-fit: cover;
+    position: relative;
+    left: 40%;
+}
+.customers-container .box:hover{
+    background-color: #958B83;
+    color: #36322D;
+    cursor: pointer;
+    transition: 0.3s all linear;
+}
