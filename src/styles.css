@@ -183,6 +183,7 @@ section{
     color: #36322D;
 }
 .products-container{
+    user-select: none;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px, auto));
     gap: 1.5rem;
@@ -239,11 +240,13 @@ section{
     transition: 0.4s all ease-in-out;
 }
 .customers-container{
+    user-select: none;
     border-radius: 6px;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(280px,auto));
     gap: 1.5rem;
     margin-top: 2rem;
+    margin-bottom: 3rem;
 }
 .customers-container .box{
     background-color: #605246;
@@ -263,6 +266,7 @@ section{
     font-weight: 600;
     text-align: center;
     margin: 0.5rem 0 0.5rem;
+    color: #ffeeee;
 }
 .customers-container .box img{
     width: 70px;
@@ -277,4 +281,76 @@ section{
     color: #36322D;
     cursor: pointer;
     transition: 0.3s all linear;
+}
+.footer{
+    user-select: none;
+    background-color: #36322D;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(240px,auto));
+    gap: 1.5rem;
+}
+.footer-box h2{
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #A49687;
+}
+.footer-box p{
+    font-size: 0.938rem;
+    margin-bottom: 10px;
+    color: #ffeeee;
+}
+.social{
+    display: flex;
+    align-items: center;
+    column-gap: 0.5rem;
+    margin-top: 25px;
+}
+.social a .bx{
+    text-decoration: none;
+    color: #ffeeee;
+    font-size: 24px;
+    background-color: #605246;
+    border-radius: .2rem;
+    padding: 2px;
+}
+.social a .bx:hover{
+    background-color: #ffeeee;
+    color: #36322D;
+    transition: 0.3s all ease-in-out;
+}
+.footer-box h3{
+    font-weight: 600;
+    margin-bottom: 10px;
+    color: #C2B9AF;
+}
+.footer-box li{
+    padding-bottom: 7px;
+}
+.footer-box li a{
+    color: #A49687;
+}
+.footer-box li a:hover{
+    color: #fff;
+}
+.contact{
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.4rem;
+    color: #C2B9AF;
+}
+.contact span{
+    display: flex;
+    align-items: center;
+}
+.contact i{
+    font-size: 20px;
+    margin-right: 1rem;
+}
+.copyright{
+    padding: 20px;
+    background-color: #797673;
+    color: #ffeeee;
+    font-weight: 600;
+    text-align: center;
 }
